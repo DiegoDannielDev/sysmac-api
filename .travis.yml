@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - openjdk11
+  - openjdk8
 script:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
@@ -13,7 +13,7 @@ before_deploy:
 deploy:
   provider: heroku
   api_key: 652e33f2-16ac-4af5-8083-5cefdb5a3184
-  app: pocintegracao
+  app: sysmac-api
 
 
 
